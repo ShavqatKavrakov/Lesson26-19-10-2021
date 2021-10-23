@@ -30,11 +30,11 @@ namespace Lesson26_19_10_2021
             Console.Write($"\nSort for length of Array string: ");
             var resultArray1 = array1.OrderBy(x => x.Length).ToArray();
             WriteArray(resultArray1);
-            double[] array2 = new[] { -2, -2, 4.23, -2, -2, -2 };
-            double a = array2[0];
+            double[] array2 = new[] { -2,-2, -2, -234.8, -2, -2, -2 };
+            double a = array2[2];
             Console.Write($"\n\nArray double: ");
             WriteArray(array2);
-            var resultArray2 = array2.SkipWhile(w => w == a).Take(1);
+            var resultArray2 = array2.SkipWhile(w => w == a ).Take(1);
             foreach (var i in resultArray2)
                 Console.Write($"\nResult: {i}");
         }
